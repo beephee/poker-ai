@@ -1,6 +1,6 @@
-def preflop_odds(cards):
-    temp = cards[0] + cards[2];
-    if (cards[1] == cards[3]):
+def preflop_odds(card1,card2):
+    temp = card1[1] + card2[1];
+    if (card1[0] == card2[0]):
         return (preflop_samesuit.get(temp))
     else:
         return (preflop_offsuit.get(temp))
