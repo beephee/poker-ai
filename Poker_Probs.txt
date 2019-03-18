@@ -1,0 +1,1187 @@
+Total statistics for hand [2, 2] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2925697 (58.51%)
+Rounds drawn: 208223 (4.16%)
+Rounds lost: 1866080 (37.32%)
+
+Total statistics for hand [2, 3] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1669557 (33.39%)
+Rounds drawn: 1116879 (22.34%)
+Rounds lost: 2213564 (44.27%)
+
+Total statistics for hand [2, 4] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1712189 (34.24%)
+Rounds drawn: 1118246 (22.36%)
+Rounds lost: 2169565 (43.39%)
+
+Total statistics for hand [2, 5] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1748658 (34.97%)
+Rounds drawn: 1121767 (22.44%)
+Rounds lost: 2129575 (42.59%)
+
+Total statistics for hand [2, 6] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1786506 (35.73%)
+Rounds drawn: 1125072 (22.5%)
+Rounds lost: 2088422 (41.77%)
+
+Total statistics for hand [2, 7] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1758419 (35.17%)
+Rounds drawn: 1142665 (22.85%)
+Rounds lost: 2098916 (41.98%)
+
+Total statistics for hand [2, 8] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1803104 (36.06%)
+Rounds drawn: 1139639 (22.79%)
+Rounds lost: 2057257 (41.15%)
+
+Total statistics for hand [2, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1839234 (36.78%)
+Rounds drawn: 1136005 (22.72%)
+Rounds lost: 2024761 (40.5%)
+
+Total statistics for hand [2, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1873227 (37.46%)
+Rounds drawn: 1136128 (22.72%)
+Rounds lost: 1990645 (39.81%)
+
+Total statistics for hand [2, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1906992 (38.14%)
+Rounds drawn: 1127307 (22.55%)
+Rounds lost: 1965701 (39.31%)
+
+Total statistics for hand [2, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1954661 (39.09%)
+Rounds drawn: 1110007 (22.2%)
+Rounds lost: 1935332 (38.71%)
+
+Total statistics for hand [2, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2042853 (40.86%)
+Rounds drawn: 1067379 (21.35%)
+Rounds lost: 1889768 (37.8%)
+
+Total statistics for hand [2, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2214664 (44.29%)
+Rounds drawn: 964769 (19.3%)
+Rounds lost: 1820567 (36.41%)
+
+Total statistics for hand [3, 3] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3053943 (61.08%)
+Rounds drawn: 190966 (3.82%)
+Rounds lost: 1755091 (35.1%)
+
+Total statistics for hand [3, 4] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1798757 (35.98%)
+Rounds drawn: 1102738 (22.05%)
+Rounds lost: 2098505 (41.97%)
+
+Total statistics for hand [3, 5] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1837007 (36.74%)
+Rounds drawn: 1105097 (22.1%)
+Rounds lost: 2057896 (41.16%)
+
+Total statistics for hand [3, 6] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1872821 (37.46%)
+Rounds drawn: 1107983 (22.16%)
+Rounds lost: 2019196 (40.38%)
+
+Total statistics for hand [3, 7] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1850787 (37.02%)
+Rounds drawn: 1125527 (22.51%)
+Rounds lost: 2023686 (40.47%)
+
+Total statistics for hand [3, 8] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1831580 (36.63%)
+Rounds drawn: 1141474 (22.83%)
+Rounds lost: 2026946 (40.54%)
+
+Total statistics for hand [3, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1874180 (37.48%)
+Rounds drawn: 1139106 (22.78%)
+Rounds lost: 1986714 (39.73%)
+
+Total statistics for hand [3, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1911702 (38.23%)
+Rounds drawn: 1137971 (22.76%)
+Rounds lost: 1950327 (39.01%)
+
+Total statistics for hand [3, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1943132 (38.86%)
+Rounds drawn: 1129749 (22.59%)
+Rounds lost: 1927119 (38.54%)
+
+Total statistics for hand [3, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1993620 (39.87%)
+Rounds drawn: 1113161 (22.26%)
+Rounds lost: 1893219 (37.86%)
+
+Total statistics for hand [3, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2080241 (41.6%)
+Rounds drawn: 1067451 (21.35%)
+Rounds lost: 1852308 (37.05%)
+
+Total statistics for hand [3, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2251890 (45.04%)
+Rounds drawn: 964895 (19.3%)
+Rounds lost: 1783215 (35.66%)
+
+Total statistics for hand [4, 4] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3183209 (63.66%)
+Rounds drawn: 172883 (3.46%)
+Rounds lost: 1643908 (32.88%)
+
+Total statistics for hand [4, 5] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1923185 (38.46%)
+Rounds drawn: 1090788 (21.82%)
+Rounds lost: 1986027 (39.72%)
+
+Total statistics for hand [4, 6] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1960425 (39.21%)
+Rounds drawn: 1092145 (21.84%)
+Rounds lost: 1947430 (38.95%)
+
+Total statistics for hand [4, 7] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1933417 (38.67%)
+Rounds drawn: 1110342 (22.21%)
+Rounds lost: 1956241 (39.12%)
+
+Total statistics for hand [4, 8] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1919778 (38.4%)
+Rounds drawn: 1126718 (22.53%)
+Rounds lost: 1953504 (39.07%)
+
+Total statistics for hand [4, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1901813 (38.04%)
+Rounds drawn: 1143322 (22.87%)
+Rounds lost: 1954865 (39.1%)
+
+Total statistics for hand [4, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1947972 (38.96%)
+Rounds drawn: 1140395 (22.81%)
+Rounds lost: 1911633 (38.23%)
+
+Total statistics for hand [4, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1981800 (39.64%)
+Rounds drawn: 1131304 (22.63%)
+Rounds lost: 1886896 (37.74%)
+
+Total statistics for hand [4, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2032317 (40.65%)
+Rounds drawn: 1113966 (22.28%)
+Rounds lost: 1853717 (37.07%)
+
+Total statistics for hand [4, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2115549 (42.31%)
+Rounds drawn: 1070409 (21.41%)
+Rounds lost: 1814042 (36.28%)
+
+Total statistics for hand [4, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2290482 (45.81%)
+Rounds drawn: 964499 (19.29%)
+Rounds lost: 1745019 (34.9%)
+
+Total statistics for hand [5, 5] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3307494 (66.15%)
+Rounds drawn: 157690 (3.15%)
+Rounds lost: 1534816 (30.7%)
+
+Total statistics for hand [5, 6] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2044207 (40.88%)
+Rounds drawn: 1077283 (21.55%)
+Rounds lost: 1878510 (37.57%)
+
+Total statistics for hand [5, 7] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2019848 (40.4%)
+Rounds drawn: 1094216 (21.88%)
+Rounds lost: 1885936 (37.72%)
+
+Total statistics for hand [5, 8] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2004201 (40.08%)
+Rounds drawn: 1112008 (22.24%)
+Rounds lost: 1883791 (37.68%)
+
+Total statistics for hand [5, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1986971 (39.74%)
+Rounds drawn: 1127922 (22.56%)
+Rounds lost: 1885107 (37.7%)
+
+Total statistics for hand [5, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 1976278 (39.53%)
+Rounds drawn: 1142664 (22.85%)
+Rounds lost: 1881058 (37.62%)
+
+Total statistics for hand [5, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2019527 (40.39%)
+Rounds drawn: 1132467 (22.65%)
+Rounds lost: 1848006 (36.96%)
+
+Total statistics for hand [5, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2066821 (41.34%)
+Rounds drawn: 1115382 (22.31%)
+Rounds lost: 1817797 (36.36%)
+
+Total statistics for hand [5, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2154800 (43.1%)
+Rounds drawn: 1070927 (21.42%)
+Rounds lost: 1774273 (35.49%)
+
+Total statistics for hand [5, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2330633 (46.61%)
+Rounds drawn: 965442 (19.31%)
+Rounds lost: 1703925 (34.08%)
+
+Total statistics for hand [6, 6] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3430437 (68.61%)
+Rounds drawn: 144260 (2.89%)
+Rounds lost: 1425303 (28.51%)
+
+Total statistics for hand [6, 7] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2102553 (42.05%)
+Rounds drawn: 1080390 (21.61%)
+Rounds lost: 1817057 (36.34%)
+
+Total statistics for hand [6, 8] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2090974 (41.82%)
+Rounds drawn: 1096309 (21.93%)
+Rounds lost: 1812717 (36.25%)
+
+Total statistics for hand [6, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2071656 (41.43%)
+Rounds drawn: 1113557 (22.27%)
+Rounds lost: 1814787 (36.3%)
+
+Total statistics for hand [6, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2058975 (41.18%)
+Rounds drawn: 1128922 (22.58%)
+Rounds lost: 1812103 (36.24%)
+
+Total statistics for hand [6, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2042185 (40.84%)
+Rounds drawn: 1138605 (22.77%)
+Rounds lost: 1819210 (36.38%)
+
+Total statistics for hand [6, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2103948 (42.08%)
+Rounds drawn: 1119607 (22.39%)
+Rounds lost: 1776445 (35.53%)
+
+Total statistics for hand [6, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2190075 (43.8%)
+Rounds drawn: 1074289 (21.49%)
+Rounds lost: 1735636 (34.71%)
+
+Total statistics for hand [6, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2365124 (47.3%)
+Rounds drawn: 966809 (19.34%)
+Rounds lost: 1668067 (33.36%)
+
+Total statistics for hand [7, 7] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3553461 (71.07%)
+Rounds drawn: 128503 (2.57%)
+Rounds lost: 1318036 (26.36%)
+
+Total statistics for hand [7, 8] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2170783 (43.42%)
+Rounds drawn: 1076655 (21.53%)
+Rounds lost: 1752562 (35.05%)
+
+Total statistics for hand [7, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2155229 (43.1%)
+Rounds drawn: 1090434 (21.81%)
+Rounds lost: 1754337 (35.09%)
+
+Total statistics for hand [7, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2144934 (42.9%)
+Rounds drawn: 1106496 (22.13%)
+Rounds lost: 1748570 (34.97%)
+
+Total statistics for hand [7, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2126678 (42.53%)
+Rounds drawn: 1118457 (22.37%)
+Rounds lost: 1754865 (35.1%)
+
+Total statistics for hand [7, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2128183 (42.56%)
+Rounds drawn: 1114894 (22.3%)
+Rounds lost: 1756923 (35.14%)
+
+Total statistics for hand [7, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2228059 (44.56%)
+Rounds drawn: 1069389 (21.39%)
+Rounds lost: 1702552 (34.05%)
+
+Total statistics for hand [7, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2402324 (48.05%)
+Rounds drawn: 964213 (19.28%)
+Rounds lost: 1633463 (32.67%)
+
+Total statistics for hand [8, 8] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3670750 (73.42%)
+Rounds drawn: 115956 (2.32%)
+Rounds lost: 1213294 (24.27%)
+
+Total statistics for hand [8, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2238214 (44.76%)
+Rounds drawn: 1071489 (21.43%)
+Rounds lost: 1690297 (33.81%)
+
+Total statistics for hand [8, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2227460 (44.55%)
+Rounds drawn: 1086882 (21.74%)
+Rounds lost: 1685658 (33.71%)
+
+Total statistics for hand [8, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2211567 (44.23%)
+Rounds drawn: 1096661 (21.93%)
+Rounds lost: 1691772 (33.84%)
+
+Total statistics for hand [8, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2207128 (44.14%)
+Rounds drawn: 1098154 (21.96%)
+Rounds lost: 1694718 (33.89%)
+
+Total statistics for hand [8, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2250768 (45.02%)
+Rounds drawn: 1068407 (21.37%)
+Rounds lost: 1680825 (33.62%)
+
+Total statistics for hand [8, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2435513 (48.71%)
+Rounds drawn: 960669 (19.21%)
+Rounds lost: 1603818 (32.08%)
+
+Total statistics for hand [9, 9] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3787403 (75.75%)
+Rounds drawn: 104121 (2.08%)
+Rounds lost: 1108476 (22.17%)
+
+Total statistics for hand [9, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2307577 (46.15%)
+Rounds drawn: 1063839 (21.28%)
+Rounds lost: 1628584 (32.57%)
+
+Total statistics for hand [9, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2290206 (45.8%)
+Rounds drawn: 1075281 (21.51%)
+Rounds lost: 1634513 (32.69%)
+
+Total statistics for hand [9, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2287713 (45.75%)
+Rounds drawn: 1077509 (21.55%)
+Rounds lost: 1634778 (32.7%)
+
+Total statistics for hand [9, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2325721 (46.51%)
+Rounds drawn: 1055957 (21.12%)
+Rounds lost: 1618322 (32.37%)
+
+Total statistics for hand [9, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2458133 (49.16%)
+Rounds drawn: 959457 (19.19%)
+Rounds lost: 1582410 (31.65%)
+
+Total statistics for hand [10, 10] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 3905445 (78.11%)
+Rounds drawn: 94864 (1.9%)
+Rounds lost: 999691 (19.99%)
+
+Total statistics for hand [10, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2389383 (47.79%)
+Rounds drawn: 1046482 (20.93%)
+Rounds lost: 1564135 (31.28%)
+
+Total statistics for hand [10, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2386891 (47.74%)
+Rounds drawn: 1047134 (20.94%)
+Rounds lost: 1565975 (31.32%)
+
+Total statistics for hand [10, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2420729 (48.41%)
+Rounds drawn: 1026227 (20.52%)
+Rounds lost: 1553044 (31.06%)
+
+Total statistics for hand [10, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2541539 (50.83%)
+Rounds drawn: 946823 (18.94%)
+Rounds lost: 1511638 (30.23%)
+
+Total statistics for hand [11, 11] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 4011639 (80.23%)
+Rounds drawn: 84717 (1.69%)
+Rounds lost: 903644 (18.07%)
+
+Total statistics for hand [11, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2412328 (48.25%)
+Rounds drawn: 1045587 (20.91%)
+Rounds lost: 1542085 (30.84%)
+
+Total statistics for hand [11, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2448265 (48.97%)
+Rounds drawn: 1020494 (20.41%)
+Rounds lost: 1531241 (30.62%)
+
+Total statistics for hand [11, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2569474 (51.39%)
+Rounds drawn: 942292 (18.85%)
+Rounds lost: 1488234 (29.76%)
+
+Total statistics for hand [12, 12] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 4122870 (82.46%)
+Rounds drawn: 75175 (1.5%)
+Rounds lost: 801955 (16.04%)
+
+Total statistics for hand [12, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2477443 (49.55%)
+Rounds drawn: 1016923 (20.34%)
+Rounds lost: 1505634 (30.11%)
+
+Total statistics for hand [12, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2598846 (51.98%)
+Rounds drawn: 936275 (18.73%)
+Rounds lost: 1464879 (29.3%)
+
+Total statistics for hand [13, 13] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 4234599 (84.69%)
+Rounds drawn: 65206 (1.3%)
+Rounds lost: 700195 (14.0%)
+
+Total statistics for hand [13, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 2628943 (52.58%)
+Rounds drawn: 931341 (18.63%)
+Rounds lost: 1439716 (28.79%)
+
+Total statistics for hand [14, 14] (DIFFERENT SUITS)
+Rounds played: 5000000
+Rounds won: 4351698 (87.03%)
+Rounds drawn: 55010 (1.1%)
+Rounds lost: 593292 (11.87%)
+
+Total statistics for hand [2, 3] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1589491 (31.79%)
+Rounds drawn: 1083974 (21.68%)
+Rounds lost: 2326535 (46.53%)
+
+Total statistics for hand [2, 4] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1629802 (32.6%)
+Rounds drawn: 1087626 (21.75%)
+Rounds lost: 2282572 (45.65%)
+
+Total statistics for hand [2, 5] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1668141 (33.36%)
+Rounds drawn: 1092996 (21.86%)
+Rounds lost: 2238863 (44.78%)
+
+Total statistics for hand [2, 6] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1704760 (34.1%)
+Rounds drawn: 1096722 (21.93%)
+Rounds lost: 2198518 (43.97%)
+
+Total statistics for hand [2, 7] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1668422 (33.37%)
+Rounds drawn: 1116825 (22.34%)
+Rounds lost: 2214753 (44.3%)
+
+Total statistics for hand [2, 8] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1711277 (34.23%)
+Rounds drawn: 1113838 (22.28%)
+Rounds lost: 2174885 (43.5%)
+
+Total statistics for hand [2, 9] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1743268 (34.87%)
+Rounds drawn: 1111842 (22.24%)
+Rounds lost: 2144890 (42.9%)
+
+Total statistics for hand [2, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1779828 (35.6%)
+Rounds drawn: 1109556 (22.19%)
+Rounds lost: 2110616 (42.21%)
+
+Total statistics for hand [2, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1806466 (36.13%)
+Rounds drawn: 1100407 (22.01%)
+Rounds lost: 2093127 (41.86%)
+
+Total statistics for hand [2, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1850211 (37.0%)
+Rounds drawn: 1081015 (21.62%)
+Rounds lost: 2068774 (41.38%)
+
+Total statistics for hand [2, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1938752 (38.78%)
+Rounds drawn: 1031004 (20.62%)
+Rounds lost: 2030244 (40.6%)
+
+Total statistics for hand [2, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2128402 (42.57%)
+Rounds drawn: 911407 (18.23%)
+Rounds lost: 1960191 (39.2%)
+
+Total statistics for hand [3, 4] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1721353 (34.43%)
+Rounds drawn: 1070364 (21.41%)
+Rounds lost: 2208283 (44.17%)
+
+Total statistics for hand [3, 5] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1762559 (35.25%)
+Rounds drawn: 1072781 (21.46%)
+Rounds lost: 2164660 (43.29%)
+
+Total statistics for hand [3, 6] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1798166 (35.96%)
+Rounds drawn: 1077895 (21.56%)
+Rounds lost: 2123939 (42.48%)
+
+Total statistics for hand [3, 7] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1762998 (35.26%)
+Rounds drawn: 1101266 (22.03%)
+Rounds lost: 2135736 (42.71%)
+
+Total statistics for hand [3, 8] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1737467 (34.75%)
+Rounds drawn: 1119025 (22.38%)
+Rounds lost: 2143508 (42.87%)
+
+Total statistics for hand [3, 9] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1782105 (35.64%)
+Rounds drawn: 1116261 (22.33%)
+Rounds lost: 2101634 (42.03%)
+
+Total statistics for hand [3, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1816262 (36.33%)
+Rounds drawn: 1114911 (22.3%)
+Rounds lost: 2068827 (41.38%)
+
+Total statistics for hand [3, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1843608 (36.87%)
+Rounds drawn: 1105272 (22.11%)
+Rounds lost: 2051120 (41.02%)
+
+Total statistics for hand [3, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1889171 (37.78%)
+Rounds drawn: 1084304 (21.69%)
+Rounds lost: 2026525 (40.53%)
+
+Total statistics for hand [3, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1978594 (39.57%)
+Rounds drawn: 1033783 (20.68%)
+Rounds lost: 1987623 (39.75%)
+
+Total statistics for hand [3, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2169167 (43.38%)
+Rounds drawn: 911993 (18.24%)
+Rounds lost: 1918840 (38.38%)
+
+Total statistics for hand [4, 5] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1852058 (37.04%)
+Rounds drawn: 1056696 (21.13%)
+Rounds lost: 2091246 (41.82%)
+
+Total statistics for hand [4, 6] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1889615 (37.79%)
+Rounds drawn: 1059179 (21.18%)
+Rounds lost: 2051206 (41.02%)
+
+Total statistics for hand [4, 7] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1856700 (37.13%)
+Rounds drawn: 1078882 (21.58%)
+Rounds lost: 2064418 (41.29%)
+
+Total statistics for hand [4, 8] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1830787 (36.62%)
+Rounds drawn: 1102926 (22.06%)
+Rounds lost: 2066287 (41.33%)
+
+Total statistics for hand [4, 9] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1808130 (36.16%)
+Rounds drawn: 1119808 (22.4%)
+Rounds lost: 2072062 (41.44%)
+
+Total statistics for hand [4, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1853219 (37.06%)
+Rounds drawn: 1117769 (22.36%)
+Rounds lost: 2029012 (40.58%)
+
+Total statistics for hand [4, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1882921 (37.66%)
+Rounds drawn: 1108311 (22.17%)
+Rounds lost: 2008768 (40.18%)
+
+Total statistics for hand [4, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1929612 (38.59%)
+Rounds drawn: 1087623 (21.75%)
+Rounds lost: 1982765 (39.66%)
+
+Total statistics for hand [4, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2018754 (40.38%)
+Rounds drawn: 1037005 (20.74%)
+Rounds lost: 1944241 (38.88%)
+
+Total statistics for hand [4, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2209000 (44.18%)
+Rounds drawn: 914564 (18.29%)
+Rounds lost: 1876436 (37.53%)
+
+Total statistics for hand [5, 6] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1977829 (39.56%)
+Rounds drawn: 1043379 (20.87%)
+Rounds lost: 1978792 (39.58%)
+
+Total statistics for hand [5, 7] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1945308 (38.91%)
+Rounds drawn: 1063521 (21.27%)
+Rounds lost: 1991171 (39.82%)
+
+Total statistics for hand [5, 8] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1924460 (38.49%)
+Rounds drawn: 1084154 (21.68%)
+Rounds lost: 1991386 (39.83%)
+
+Total statistics for hand [5, 9] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1900340 (38.01%)
+Rounds drawn: 1103335 (22.07%)
+Rounds lost: 1996325 (39.93%)
+
+Total statistics for hand [5, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1880400 (37.61%)
+Rounds drawn: 1123442 (22.47%)
+Rounds lost: 1996158 (39.92%)
+
+Total statistics for hand [5, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1921238 (38.42%)
+Rounds drawn: 1110472 (22.21%)
+Rounds lost: 1968290 (39.37%)
+
+Total statistics for hand [5, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1965495 (39.31%)
+Rounds drawn: 1092272 (21.85%)
+Rounds lost: 1942233 (38.84%)
+
+Total statistics for hand [5, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2056267 (41.13%)
+Rounds drawn: 1038248 (20.76%)
+Rounds lost: 1905485 (38.11%)
+
+Total statistics for hand [5, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2247349 (44.95%)
+Rounds drawn: 913306 (18.27%)
+Rounds lost: 1839345 (36.79%)
+
+Total statistics for hand [6, 7] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2033962 (40.68%)
+Rounds drawn: 1046244 (20.92%)
+Rounds lost: 1919794 (38.4%)
+
+Total statistics for hand [6, 8] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2014003 (40.28%)
+Rounds drawn: 1067586 (21.35%)
+Rounds lost: 1918411 (38.37%)
+
+Total statistics for hand [6, 9] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1990547 (39.81%)
+Rounds drawn: 1085862 (21.72%)
+Rounds lost: 1923591 (38.47%)
+
+Total statistics for hand [6, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1970791 (39.42%)
+Rounds drawn: 1107073 (22.14%)
+Rounds lost: 1922136 (38.44%)
+
+Total statistics for hand [6, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 1944007 (38.88%)
+Rounds drawn: 1118192 (22.36%)
+Rounds lost: 1937801 (38.76%)
+
+Total statistics for hand [6, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2005476 (40.11%)
+Rounds drawn: 1093793 (21.88%)
+Rounds lost: 1900731 (38.01%)
+
+Total statistics for hand [6, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2094774 (41.9%)
+Rounds drawn: 1040680 (20.81%)
+Rounds lost: 1864546 (37.29%)
+
+Total statistics for hand [6, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2287454 (45.75%)
+Rounds drawn: 916506 (18.33%)
+Rounds lost: 1796040 (35.92%)
+
+Total statistics for hand [7, 8] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2100071 (42.0%)
+Rounds drawn: 1042076 (20.84%)
+Rounds lost: 1857853 (37.16%)
+
+Total statistics for hand [7, 9] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2077076 (41.54%)
+Rounds drawn: 1061159 (21.22%)
+Rounds lost: 1861765 (37.24%)
+
+Total statistics for hand [7, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2058255 (41.17%)
+Rounds drawn: 1081276 (21.63%)
+Rounds lost: 1860469 (37.21%)
+
+Total statistics for hand [7, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2031944 (40.64%)
+Rounds drawn: 1093056 (21.86%)
+Rounds lost: 1875000 (37.5%)
+
+Total statistics for hand [7, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2022266 (40.45%)
+Rounds drawn: 1090862 (21.82%)
+Rounds lost: 1886872 (37.74%)
+
+Total statistics for hand [7, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2126854 (42.54%)
+Rounds drawn: 1037369 (20.75%)
+Rounds lost: 1835777 (36.72%)
+
+Total statistics for hand [7, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2318595 (46.37%)
+Rounds drawn: 913864 (18.28%)
+Rounds lost: 1767541 (35.35%)
+
+Total statistics for hand [8, 9] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2160006 (43.2%)
+Rounds drawn: 1038542 (20.77%)
+Rounds lost: 1801452 (36.03%)
+
+Total statistics for hand [8, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2141158 (42.82%)
+Rounds drawn: 1058083 (21.16%)
+Rounds lost: 1800759 (36.02%)
+
+Total statistics for hand [8, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2114187 (42.28%)
+Rounds drawn: 1070127 (21.4%)
+Rounds lost: 1815686 (36.31%)
+
+Total statistics for hand [8, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2103498 (42.07%)
+Rounds drawn: 1071216 (21.42%)
+Rounds lost: 1825286 (36.51%)
+
+Total statistics for hand [8, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2146681 (42.93%)
+Rounds drawn: 1037186 (20.74%)
+Rounds lost: 1816133 (36.32%)
+
+Total statistics for hand [8, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2351096 (47.02%)
+Rounds drawn: 911592 (18.23%)
+Rounds lost: 1737312 (34.75%)
+
+Total statistics for hand [9, 10] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2224537 (44.49%)
+Rounds drawn: 1033917 (20.68%)
+Rounds lost: 1741546 (34.83%)
+
+Total statistics for hand [9, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2198082 (43.96%)
+Rounds drawn: 1045356 (20.91%)
+Rounds lost: 1756562 (35.13%)
+
+Total statistics for hand [9, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2185866 (43.72%)
+Rounds drawn: 1049960 (21.0%)
+Rounds lost: 1764174 (35.28%)
+
+Total statistics for hand [9, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2221510 (44.43%)
+Rounds drawn: 1023457 (20.47%)
+Rounds lost: 1755033 (35.1%)
+
+Total statistics for hand [9, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2369340 (47.39%)
+Rounds drawn: 911054 (18.22%)
+Rounds lost: 1719606 (34.39%)
+
+Total statistics for hand [10, 11] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2300223 (46.0%)
+Rounds drawn: 1013920 (20.28%)
+Rounds lost: 1685857 (33.72%)
+
+Total statistics for hand [10, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2288085 (45.76%)
+Rounds drawn: 1016168 (20.32%)
+Rounds lost: 1695747 (33.91%)
+
+Total statistics for hand [10, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2322220 (46.44%)
+Rounds drawn: 990581 (19.81%)
+Rounds lost: 1687199 (33.74%)
+
+Total statistics for hand [10, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2455246 (49.1%)
+Rounds drawn: 893948 (17.88%)
+Rounds lost: 1650806 (33.02%)
+
+Total statistics for hand [11, 12] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2309611 (46.19%)
+Rounds drawn: 1010027 (20.2%)
+Rounds lost: 1680362 (33.61%)
+
+Total statistics for hand [11, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2342490 (46.85%)
+Rounds drawn: 985027 (19.7%)
+Rounds lost: 1672483 (33.45%)
+
+Total statistics for hand [11, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2474890 (49.5%)
+Rounds drawn: 890711 (17.81%)
+Rounds lost: 1634399 (32.69%)
+
+Total statistics for hand [12, 13] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2363770 (47.28%)
+Rounds drawn: 981897 (19.64%)
+Rounds lost: 1654333 (33.09%)
+
+Total statistics for hand [12, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2497800 (49.96%)
+Rounds drawn: 887510 (17.75%)
+Rounds lost: 1614690 (32.29%)
+
+Total statistics for hand [13, 14] (SAME SUIT)
+Rounds played: 5000000
+Rounds won: 2514293 (50.29%)
+Rounds drawn: 885818 (17.72%)
+Rounds lost: 1599889 (32.0%)
+
+
+
+WINNING PROBABILITIES
+
+Hand 14,14,diffsuit : 87.03%
+Hand 13,13,diffsuit : 84.69%
+Hand 12,12,diffsuit : 82.46%
+Hand 11,11,diffsuit : 80.23%
+Hand 10,10,diffsuit : 78.11%
+Hand 9,9,diffsuit : 75.75%
+Hand 8,8,diffsuit : 73.42%
+Hand 7,7,diffsuit : 71.07%
+Hand 6,6,diffsuit : 68.61%
+Hand 5,5,diffsuit : 66.15%
+Hand 4,4,diffsuit : 63.66%
+Hand 3,3,diffsuit : 61.08%
+Hand 2,2,diffsuit : 58.51%
+Hand 13,14,diffsuit : 52.58%
+Hand 12,14,diffsuit : 51.98%
+Hand 11,14,diffsuit : 51.39%
+Hand 10,14,diffsuit : 50.83%
+Hand 13,14,samesuit : 50.29%
+Hand 12,14,samesuit : 49.96%
+Hand 12,13,diffsuit : 49.55%
+Hand 11,14,samesuit : 49.5%
+Hand 9,14,diffsuit : 49.16%
+Hand 10,14,samesuit : 49.1%
+Hand 11,13,diffsuit : 48.97%
+Hand 8,14,diffsuit : 48.71%
+Hand 10,13,diffsuit : 48.41%
+Hand 11,12,diffsuit : 48.25%
+Hand 7,14,diffsuit : 48.05%
+Hand 10,11,diffsuit : 47.79%
+Hand 10,12,diffsuit : 47.74%
+Hand 9,14,samesuit : 47.39%
+Hand 6,14,diffsuit : 47.3%
+Hand 12,13,samesuit : 47.28%
+Hand 8,14,samesuit : 47.02%
+Hand 11,13,samesuit : 46.85%
+Hand 5,14,diffsuit : 46.61%
+Hand 9,13,diffsuit : 46.51%
+Hand 10,13,samesuit : 46.44%
+Hand 7,14,samesuit : 46.37%
+Hand 11,12,samesuit : 46.19%
+Hand 9,10,diffsuit : 46.15%
+Hand 10,11,samesuit : 46.0%
+Hand 4,14,diffsuit : 45.81%
+Hand 9,11,diffsuit : 45.8%
+Hand 10,12,samesuit : 45.76%
+Hand 9,12,diffsuit : 45.75%
+Hand 6,14,samesuit : 45.75%
+Hand 3,14,diffsuit : 45.04%
+Hand 8,13,diffsuit : 45.02%
+Hand 5,14,samesuit : 44.95%
+Hand 8,9,diffsuit : 44.76%
+Hand 7,13,diffsuit : 44.56%
+Hand 8,10,diffsuit : 44.55%
+Hand 9,10,samesuit : 44.49%
+Hand 9,13,samesuit : 44.43%
+Hand 2,14,diffsuit : 44.29%
+Hand 8,11,diffsuit : 44.23%
+Hand 4,14,samesuit : 44.18%
+Hand 8,12,diffsuit : 44.14%
+Hand 9,11,samesuit : 43.96%
+Hand 6,13,diffsuit : 43.8%
+Hand 9,12,samesuit : 43.72%
+Hand 7,8,diffsuit : 43.42%
+Hand 3,14,samesuit : 43.38%
+Hand 8,9,samesuit : 43.2%
+Hand 5,13,diffsuit : 43.1%
+Hand 7,9,diffsuit : 43.1%
+Hand 8,13,samesuit : 42.93%
+Hand 7,10,diffsuit : 42.9%
+Hand 8,10,samesuit : 42.82%
+Hand 2,14,samesuit : 42.57%
+Hand 7,12,diffsuit : 42.56%
+Hand 7,13,samesuit : 42.54%
+Hand 7,11,diffsuit : 42.53%
+Hand 4,13,diffsuit : 42.31%
+Hand 8,11,samesuit : 42.28%
+Hand 6,12,diffsuit : 42.08%
+Hand 8,12,samesuit : 42.07%
+Hand 6,7,diffsuit : 42.05%
+Hand 7,8,samesuit : 42.0%
+Hand 6,13,samesuit : 41.9%
+Hand 6,8,diffsuit : 41.82%
+Hand 3,13,diffsuit : 41.6%
+Hand 7,9,samesuit : 41.54%
+Hand 6,9,diffsuit : 41.43%
+Hand 5,12,diffsuit : 41.34%
+Hand 6,10,diffsuit : 41.18%
+Hand 7,10,samesuit : 41.17%
+Hand 5,13,samesuit : 41.13%
+Hand 5,6,diffsuit : 40.88%
+Hand 2,13,diffsuit : 40.86%
+Hand 6,11,diffsuit : 40.84%
+Hand 6,7,samesuit : 40.68%
+Hand 4,12,diffsuit : 40.65%
+Hand 7,11,samesuit : 40.64%
+Hand 7,12,samesuit : 40.45%
+Hand 5,7,diffsuit : 40.4%
+Hand 5,11,diffsuit : 40.39%
+Hand 4,13,samesuit : 40.38%
+Hand 6,8,samesuit : 40.28%
+Hand 6,12,samesuit : 40.11%
+Hand 5,8,diffsuit : 40.08%
+Hand 3,12,diffsuit : 39.87%
+Hand 6,9,samesuit : 39.81%
+Hand 5,9,diffsuit : 39.74%
+Hand 4,11,diffsuit : 39.64%
+Hand 3,13,samesuit : 39.57%
+Hand 5,6,samesuit : 39.56%
+Hand 5,10,diffsuit : 39.53%
+Hand 6,10,samesuit : 39.42%
+Hand 5,12,samesuit : 39.31%
+Hand 4,6,diffsuit : 39.21%
+Hand 2,12,diffsuit : 39.09%
+Hand 4,10,diffsuit : 38.96%
+Hand 5,7,samesuit : 38.91%
+Hand 6,11,samesuit : 38.88%
+Hand 3,11,diffsuit : 38.86%
+Hand 2,13,samesuit : 38.78%
+Hand 4,7,diffsuit : 38.67%
+Hand 4,12,samesuit : 38.59%
+Hand 5,8,samesuit : 38.49%
+Hand 4,5,diffsuit : 38.46%
+Hand 5,11,samesuit : 38.42%
+Hand 4,8,diffsuit : 38.4%
+Hand 3,10,diffsuit : 38.23%
+Hand 2,11,diffsuit : 38.14%
+Hand 4,9,diffsuit : 38.04%
+Hand 5,9,samesuit : 38.01%
+Hand 4,6,samesuit : 37.79%
+Hand 3,12,samesuit : 37.78%
+Hand 4,11,samesuit : 37.66%
+Hand 5,10,samesuit : 37.61%
+Hand 3,9,diffsuit : 37.48%
+Hand 2,10,diffsuit : 37.46%
+Hand 3,6,diffsuit : 37.46%
+Hand 4,7,samesuit : 37.13%
+Hand 4,10,samesuit : 37.06%
+Hand 4,5,samesuit : 37.04%
+Hand 3,7,diffsuit : 37.02%
+Hand 2,12,samesuit : 37.0%
+Hand 3,11,samesuit : 36.87%
+Hand 2,9,diffsuit : 36.78%
+Hand 3,5,diffsuit : 36.74%
+Hand 3,8,diffsuit : 36.63%
+Hand 4,8,samesuit : 36.62%
+Hand 3,10,samesuit : 36.33%
+Hand 4,9,samesuit : 36.16%
+Hand 2,11,samesuit : 36.13%
+Hand 2,8,diffsuit : 36.06%
+Hand 3,4,diffsuit : 35.98%
+Hand 3,6,samesuit : 35.96%
+Hand 2,6,diffsuit : 35.73%
+Hand 3,9,samesuit : 35.64%
+Hand 2,10,samesuit : 35.6%
+Hand 3,7,samesuit : 35.26%
+Hand 3,5,samesuit : 35.25%
+Hand 2,7,diffsuit : 35.17%
+Hand 2,5,diffsuit : 34.97%
+Hand 2,9,samesuit : 34.87%
+Hand 3,8,samesuit : 34.75%
+Hand 3,4,samesuit : 34.43%
+Hand 2,4,diffsuit : 34.24%
+Hand 2,8,samesuit : 34.23%
+Hand 2,6,samesuit : 34.1%
+Hand 2,3,diffsuit : 33.39%
+Hand 2,7,samesuit : 33.37%
+Hand 2,5,samesuit : 33.36%
+Hand 2,4,samesuit : 32.6%
+Hand 2,3,samesuit : 31.79%
