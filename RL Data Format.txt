@@ -1,0 +1,25 @@
+0 CARDS OUT (ONLY 2 CARDS)
+	own win rate
+	own hand strength
+	value of opponent behaviour function
+	opponent win rate
+	opponent hand strength
+3 CARDS OUT
+	own win rate
+	own hand strength
+	value of opponent behaviour function
+	opponent win rate
+	opponent hand strength
+4 CARDS OUT
+	own win rate
+	own hand strength
+	value of opponent behaviour function
+	opponent win rate
+	opponent hand strength
+5 CARDS OUT
+	own win rate
+	own hand strength
+	value of opponent behaviour function
+	opponent win rate
+	opponent hand strength
+WIN/LOSE
