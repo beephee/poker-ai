@@ -105,7 +105,7 @@ class Group26Player(BasePokerPlayer):
     turn_multiplier = 1.0 + (river_multiplier - 1.0)*turn_corr
     flop_multiplier = 1.0 + (river_multiplier - 1.0)*flop_corr
     
-    river_call_multiplier = 1.05
+    river_call_multiplier = 1.08
     preflop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*preflop_corr
     turn_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*turn_corr
     flop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*flop_corr

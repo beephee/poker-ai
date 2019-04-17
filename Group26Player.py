@@ -39,7 +39,9 @@ ob_fn_history = []
 hand_strength_history = []
 opp_hand_win_rate = 0.5
 
-raise_threshold = 0.55
+#the thresholds you will definitely raise and fold
+raise_threshold = 0.70
+fold_threshold = 0.30
 game_count = 0
 
 
@@ -101,12 +103,15 @@ class Group26Player(BasePokerPlayer):
     river_corr = 1.0
     
     
-    river_multiplier = 1.10
+    # how much you multiply to your current OHS when your opponent raises
+    # should change according to opponent behaviour
+    river_multiplier = 1.4
     preflop_multiplier = 1.0 + (river_multiplier - 1.0)*preflop_corr
     turn_multiplier = 1.0 + (river_multiplier - 1.0)*turn_corr
     flop_multiplier = 1.0 + (river_multiplier - 1.0)*flop_corr
-    
-    river_call_multiplier = 1.07
+    # how much you multiply to your current OHS when your opponent calls 
+    # should change according to opponent behaviour
+    river_call_multiplier = 1.05
     preflop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*preflop_corr
     turn_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*turn_corr
     flop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*flop_corr
@@ -129,11 +134,11 @@ class Group26Player(BasePokerPlayer):
     global opp_hand_win_rate
     round_info  = round_state['action_histories'][street]
     opp_actions = [ i for i in round_info if i['uuid']!=self.uuid]
-    #self_actions = [ i for i in round_info if i['uuid'] ==self.uuid]
+    self_actions = [ i for i in round_info if i['uuid'] ==self.uuid]
     
-#    if street == 'preflop':
-#        if len(self_actions) == 1:
-#            opp_hand_win_rate = 0.5
+    if street == 'preflop':
+        if len(self_actions) == 1:
+            opp_hand_win_rate = 0.5
             
     if len(opp_actions)>0:
         last_opp_action = opp_actions[-1]
@@ -142,10 +147,11 @@ class Group26Player(BasePokerPlayer):
         if last_opp_action['action'] == 'RAISE':
             opp_hand_win_rate = opp_hand_win_rate * locals()[street+'_multiplier']
     
-    
+    print('opp',opp_hand_win_rate)
     # win_prob is between 0 - 100
     global win_prob
     win_prob = estimate_hole_card_win_rate(75, 2, gen_cards(hole_card), gen_cards(round_state['community_card'])) 
+    print('my winprob',win_prob)
     
     #calculate overall win rate based on self and opponent hand strength
     overall_win_prob = win_prob * (1- opp_hand_win_rate)/(win_prob*(1- opp_hand_win_rate) + opp_hand_win_rate*(1-win_prob))
@@ -156,7 +162,7 @@ class Group26Player(BasePokerPlayer):
         pot = round_state['pot']['main']['amount']/2
         
         if street == 'preflop':
-            expected_pot = pot +100
+            expected_pot = pot + 100
         elif street == 'flop':
             expected_pot = pot + 80
         elif street == 'turn':
@@ -164,12 +170,12 @@ class Group26Player(BasePokerPlayer):
         elif street == 'river':
             expected_pot = pot + 40
         #print('expectd',expected_pot)
-        fold_breakeven_point = (1.0 - float(pot)/float(expected_pot))/2.5
+        fold_breakeven_point = (1.0 - float(pot)/float(expected_pot))/2.2
         
         print('fpoint',fold_breakeven_point)
         if(overall_win_prob < fold_breakeven_point):
-            
-            fold_prob = locals()[street+'_corr'] + ( fold_breakeven_point - overall_win_prob)/(fold_breakeven_point/2) * (1 - locals()[street+'_corr'])
+            global fold_threshold
+            fold_prob = locals()[street+'_corr'] + ( fold_breakeven_point - overall_win_prob)/fold_threshold * (1 - locals()[street+'_corr'])
             print('foladprob:',fold_prob)
             seed = random.uniform(0, 1)
             if seed < fold_prob:
@@ -181,6 +187,7 @@ class Group26Player(BasePokerPlayer):
     elif overall_win_prob > 0.50 and can_raise:
         global raise_threshold
         raise_prob = locals()[street+'_corr'] + (overall_win_prob - raise_threshold)/0.2* (1 - locals()[street+'_corr'])
+        print('raise_prob', raise_prob)
         seed = random.uniform(0, 1)
         if seed < raise_prob:
             return 'raise'
