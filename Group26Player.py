@@ -41,7 +41,7 @@ opp_hand_win_rate = 0.5
 
 #the thresholds you will definitely raise and fold
 raise_threshold = 0.70
-fold_threshold = 0.30
+fold_threshold = 0.25
 game_count = 0
 
 
@@ -105,7 +105,7 @@ class Group26Player(BasePokerPlayer):
     
     # how much you multiply to your current OHS when your opponent raises
     # should change according to opponent behaviour
-    river_multiplier = 1.4
+    river_multiplier = 1.6
     preflop_multiplier = 1.0 + (river_multiplier - 1.0)*preflop_corr
     turn_multiplier = 1.0 + (river_multiplier - 1.0)*turn_corr
     flop_multiplier = 1.0 + (river_multiplier - 1.0)*flop_corr
