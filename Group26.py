@@ -24,6 +24,7 @@ opp_behaviour['aggressive'] = 0
 opp_behaviour['balanced'] = 1
 
 opp_thresholds = [100,]
+opp_lowerbounds = [0,]
 
 # randomly initialise weights w1 and w2 for eval function
 # values are floats between 0 and 1
@@ -32,7 +33,20 @@ w2 = 0 #random.random()
 w3 = 0.9
 win_prob = 0
 round_ctr = 1
-opp_raise_threshold = 100
+opp_raise_threshold = 50
+opp_lowerbound = 20
+
+counter = 0
+
+win_rate_history = []
+ob_fn_history = []
+hand_strength_history = []
+opp_hand_win_rate = 0.5
+
+#the thresholds you will definitely raise and fold
+raise_threshold = 0.70
+fold_threshold = 0.30
+game_count = 0
 
 preflop_offsuit = {"AA" : 84.93, "KK" : 82.11, "QQ" : 79.63, "JJ" : 77.15,
                    "TT" : 74.66, "99" : 71.66, "88" : 68.71, "77" : 65.72,
@@ -83,12 +97,106 @@ preflop_samesuit = {"AK" : 66.21, "AQ" : 65.31, "AJ" : 64.39, "AT" : 62.22,
 
 class Group26Player(BasePokerPlayer):
 
+  def h4(self, valid_actions, hole_card, round_state):
+    #start = time.time()
+    preflop_corr = 0.3163266
+    flop_corr = 0.66611347
+    turn_corr = 0.79630204
+    river_corr = 1.0
+        
+        
+    # how much you multiply to your current OHS when your opponent raises
+    # should change according to opponent behaviour
+    river_multiplier = 1.4
+    preflop_multiplier = 1.0 + (river_multiplier - 1.0)*preflop_corr
+    turn_multiplier = 1.0 + (river_multiplier - 1.0)*turn_corr
+    flop_multiplier = 1.0 + (river_multiplier - 1.0)*flop_corr
+    # how much you multiply to your current OHS when your opponent calls
+    # should change according to opponent behaviour
+    river_call_multiplier = 1.05
+    preflop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*preflop_corr
+    turn_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*turn_corr
+    flop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*flop_corr
+        
+    # estimate opponent hand win rate based on their past actions
+    street = round_state['street']
+    if street == 'preflop':
+        multiplier = preflop_multiplier
+        call_multiplier = preflop_call_multiplier
+    elif street == 'flop':
+        multiplier = flop_multiplier
+        call_multiplier = flop_call_multiplier
+    elif street == 'turn':
+        multiplier = turn_multiplier
+        call_multiplier = turn_call_multiplier
+    elif street == 'river':
+        multiplier = river_multiplier
+        call_multiplier = river_call_multiplier
+        
+    global opp_hand_win_rate
+    round_info  = round_state['action_histories'][street]
+    opp_actions = [ i for i in round_info if i['uuid']!=self.uuid]
+    self_actions = [ i for i in round_info if i['uuid'] ==self.uuid]
+        
+    if street == 'preflop':
+        if len(self_actions) == 1:
+            opp_hand_win_rate = 0.5
+            
+        if len(opp_actions)>0:
+            last_opp_action = opp_actions[-1]
+            
+        if last_opp_action['action'] == 'CALL':
+            opp_hand_win_rate = opp_hand_win_rate / locals()[street+'_call_multiplier']
+            
+        if last_opp_action['action'] == 'RAISE':
+            opp_hand_win_rate = opp_hand_win_rate * locals()[street+'_multiplier']
+        
+    #print('opp',opp_hand_win_rate)
+    # win_prob is between 0 - 100
+    global win_prob
+    win_prob = estimate_hole_card_win_rate(75, 2, gen_cards(hole_card), gen_cards(round_state['community_card']))
+    #print('my winprob',win_prob)
+        
+    #calculate overall win rate based on self and opponent hand strength
+    overall_win_prob = win_prob * (1- opp_hand_win_rate)/(win_prob*(1- opp_hand_win_rate) + opp_hand_win_rate*(1-win_prob))
+
+    expected_pot = 0
+    can_raise = len([item for item in valid_actions if item['action'] == 'raise']) > 0
+    pot = round_state['pot']['main']['amount']/2
+        
+    if street == 'preflop':
+      expected_pot = pot + 100
+    elif street == 'flop':
+      expected_pot = pot + 80
+    elif street == 'turn':
+      expected_pot = pot + 40
+    elif street == 'river':
+      expected_pot = pot + 40
+
+    fold_breakeven_point = (1.0 - float(pot)/float(expected_pot))/2.2
+
+    if overall_win_prob < 0.5:
+      #print('expectd',expected_pot)
+      if(overall_win_prob < fold_breakeven_point):
+          global fold_threshold
+          fold_prob = locals()[street+'_corr'] + ( fold_breakeven_point - overall_win_prob)/fold_threshold * (1 - locals()[street+'_corr'])
+          return (overall_win_prob, fold_breakeven_point, fold_prob)
+
+
+    elif overall_win_prob > 0.5 and can_raise:
+      global raise_threshold
+      raise_prob = locals()[street+'_corr'] + (overall_win_prob - raise_threshold)/0.2* (1 - locals()[street+'_corr'])
+      return (overall_win_prob, fold_breakeven_point, raise_prob)
+
+
+    return (overall_win_prob, fold_breakeven_point)
+    
   def declare_action(self, valid_actions, hole_card, round_state):
     #start = time.time()
     
     # win_prob is between 0 - 100
     global win_prob
-    win_prob = estimate_hole_card_win_rate(100, 2, gen_cards(hole_card), gen_cards(round_state['community_card'])) * 100
+    win_prob = estimate_hole_card_win_rate(200, 2, gen_cards(hole_card), gen_cards(round_state['community_card'])) * 100
 
     # take into account opponent raise threshold after 20 rounds (when threshold has stabilised)
     if round_ctr > 20:
@@ -104,8 +212,11 @@ class Group26Player(BasePokerPlayer):
     prob_agg = float(opp_behaviour['aggressive'])/sum(opp_behaviour.values())
     ob_fn = 50 + (prob_passive*50) + (-prob_agg*50)
     #print ob_fn
-
+    
+    print sum(opp_thresholds)/len(opp_thresholds)
+    print opp_lowerbound
     print opp_raise_threshold
+    #print opp_lowerbound
 
     global w1
     global w2
@@ -123,9 +234,12 @@ class Group26Player(BasePokerPlayer):
     # final eval_fn is between -100 and 200
     eval_fn = w1*(win_prob) + w2*(ob_fn) + w3*((win_prob-opp_raise_threshold)/100.0)
     
+    print 'h4 is '
+    print(self.h4(valid_actions, hole_card, round_state))
+    
     # always call if no community cards out yet
     if len(round_state['community_card']) == 0:
-      if win_prob >= 70:
+      if win_prob >= 60:
         if len(valid_actions) != 3:
           return 'call'
         return 'raise'
@@ -194,31 +308,53 @@ class Group26Player(BasePokerPlayer):
             opp_river.append(actions['action'])
 
     if len(hand_info) == 2:
-      opp_win_prob_flop = estimate_hole_card_win_rate(200, 2, gen_cards(opp_hand), gen_cards(round_state['community_card'][:3])) * 100
-      opp_win_prob_turn = estimate_hole_card_win_rate(200, 2, gen_cards(opp_hand), gen_cards(round_state['community_card'][:4])) * 100
-      opp_win_prob_river = estimate_hole_card_win_rate(200, 2, gen_cards(opp_hand), gen_cards(round_state['community_card'])) * 100
+      opp_win_prob_flop = estimate_hole_card_win_rate(300, 2, gen_cards(opp_hand), gen_cards(round_state['community_card'][:3])) * 100
+      opp_win_prob_turn = estimate_hole_card_win_rate(300, 2, gen_cards(opp_hand), gen_cards(round_state['community_card'][:4])) * 100
+      opp_win_prob_river = estimate_hole_card_win_rate(300, 2, gen_cards(opp_hand), gen_cards(round_state['community_card'])) * 100
 
       global opp_raise_threshold
+      global lowerbounds
+      global opp_lowerbound
 
-      '''
+      consider = []
+      lowerbound = []
+      
       if opp_flop != []:
         if 'RAISE' in opp_flop:
-          opp_raise_threshold = min(opp_raise_threshold,opp_win_prob_flop)
+          consider.append(opp_win_prob_flop)
+        elif 'CALL' in opp_flop or 'CHECK' in opp_flop:
+          lowerbound.append(opp_win_prob_flop)
       if opp_turn != []:
         if 'RAISE' in opp_turn:
-          opp_raise_threshold = min(opp_raise_threshold,opp_win_prob_turn)
+          consider.append(opp_win_prob_turn)
+        elif 'CALL' in opp_turn or 'CHECK' in opp_turn:
+          lowerbound.append(opp_win_prob_turn)
       if opp_river != []:
         if 'RAISE' in opp_river:
-          opp_raise_threshold = min(opp_raise_threshold,opp_win_prob_river)
-      '''
+          consider.append(opp_win_prob_river)
+        elif 'CALL' in opp_river or 'CHECK' in opp_river:
+          lowerbound.append(opp_win_prob_river)
+      
 
     #print opp_raise_threshold
       global opp_thresholds
-      opp_raise_threshold_now = min(opp_win_prob_flop,opp_win_prob_turn,opp_win_prob_river)
-      if opp_raise_threshold_now > 35:# and opp_raise_threshold_now < (sum(opp_thresholds)/len(opp_thresholds)):
-        opp_thresholds.append(opp_raise_threshold_now)
-      opp_raise_threshold = sum(opp_thresholds)/len(opp_thresholds)
-    
+      
+      if len(lowerbound) != 0:
+          opp_lowerbound_now = max(lowerbound)
+          opp_lowerbounds.append(opp_lowerbound_now)
+          opp_lowerbound = sum(opp_lowerbounds)/len(opp_lowerbounds)
+      
+      if len(consider) != 0:
+          opp_raise_threshold_now = min(consider)
+          print 'Actual opp hand str' + str(opp_raise_threshold_now)
+          
+          if opp_raise_threshold_now > opp_lowerbound and opp_raise_threshold_now < (sum(opp_thresholds)/len(opp_thresholds)): # and opp_raise_threshold_now < (sum(opp_thresholds)/len(opp_thresholds)):
+            opp_thresholds.append(opp_raise_threshold_now)
+    #change = (sum(opp_thresholds)/len(opp_thresholds)) - opp_raise_threshold
+              #opp_raise_threshold += change
+#            opp_raise_threshold = (opp_raise_threshold_now + opp_raise_threshold)/2
+            opp_raise_threshold = ((sum(opp_thresholds)/len(opp_thresholds)) + opp_lowerbound)/2.0 #sum(opp_thresholds)/len(opp_thresholds)
+  
     num_raise = opp_actions.count('RAISE')
     num_call = opp_actions.count('CALL') + opp_actions.count('CHECK')
     num_fold = opp_actions.count('FOLD')
@@ -247,6 +383,7 @@ class Group26Player(BasePokerPlayer):
     global round_ctr
     round_ctr += 1
 
-            
+
+
 def setup_ai():
   return ProbPlayer()

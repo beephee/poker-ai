@@ -17,6 +17,7 @@ import pprint
 import array
 import operator
 import random
+import math
 
 # track opponent's behaviour, assume opponent balanced / logical at the start
 opp_behaviour = {}
@@ -170,12 +171,14 @@ class Group26Player(BasePokerPlayer):
         elif street == 'river':
             expected_pot = pot + 40
         #print('expectd',expected_pot)
-        fold_breakeven_point = (1.0 - float(pot)/float(expected_pot))/2.2
+        fold_breakeven_point = (1.0 - float(pot)/float(expected_pot))/2.0
         
         print('fpoint',fold_breakeven_point)
         if(overall_win_prob < fold_breakeven_point):
             global fold_threshold
-            fold_prob = locals()[street+'_corr'] + ( fold_breakeven_point - overall_win_prob)/fold_threshold * (1 - locals()[street+'_corr'])
+            if fold_breakeven_point==fold_threshold:
+                fold_breakeven_point = fold_breakeven_point+0.01
+            fold_prob = locals()[street+'_corr'] + ( fold_breakeven_point - overall_win_prob)/abs(fold_breakeven_point-fold_threshold) * (1 - locals()[street+'_corr'])
             print('foladprob:',fold_prob)
             seed = random.uniform(0, 1)
             if seed < fold_prob:
