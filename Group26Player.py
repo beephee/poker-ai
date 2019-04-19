@@ -147,6 +147,8 @@ class Group26Player(BasePokerPlayer):
             opp_hand_win_rate = opp_hand_win_rate / locals()[street+'_call_multiplier']
         if last_opp_action['action'] == 'RAISE':
             opp_hand_win_rate = opp_hand_win_rate * locals()[street+'_multiplier']
+            if opp_hand_win_rate > 0.80:
+                opp_hand_win_rate = 0.80
     
     print('opp',opp_hand_win_rate)
     # win_prob is between 0 - 100
@@ -187,10 +189,10 @@ class Group26Player(BasePokerPlayer):
                 return 'call'
         else:
             return 'call'
-    elif overall_win_prob > 0.50 and can_raise:
+    elif overall_win_prob > raise_threshold and can_raise:
         global raise_threshold
-        raise_prob = locals()[street+'_corr'] + (overall_win_prob - raise_threshold)/0.2* (1 - locals()[street+'_corr'])
-        print('raise_prob', raise_prob)
+        raise_prob = locals()[street+'_corr'] + (overall_win_prob - raise_threshold)/0.05* (1 - locals()[street+'_corr'])
+        #print('raise_prob', raise_prob)
         seed = random.uniform(0, 1)
         if seed < raise_prob:
             return 'raise'
