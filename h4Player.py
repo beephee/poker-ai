@@ -372,14 +372,14 @@ class h4Player(BasePokerPlayer):
     # draw or opponent won, check if he is passive
     # if our win probability is high and he doesn't raise, likely passive
     if len(winners) == 2 or winners[0]['uuid'] == opp_uuid:
-        if win_prob > 0.4 and percentage_raise < 0.3:
+        if win_prob > 0.5 and percentage_raise < 0.3:
             opp_behaviour['passive'] += (2*win_prob)
             print 'opp is passive ' + str(opp_behaviour['passive'])
 
     # draw or we won, check if he is aggressive
     # if our win probability is low and he keeps raising, likely aggressive
     if len(winners) == 2 or winners[0]['uuid'] == self.uuid:
-        if win_prob < 0.6 and percentage_raise > 0.4:
+        if win_prob < 0.5 and percentage_raise > 0.4:
             opp_behaviour['aggressive'] += (2*(1-win_prob))
             print 'opp is aggressive' + str(opp_behaviour['aggressive'])
 
