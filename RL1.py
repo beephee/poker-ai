@@ -255,6 +255,9 @@ class RL1(BasePokerPlayer):
 #        return 'call'   #fold
 
   def receive_game_start_message(self, game_info):
+    global game_count
+    game_count=0
+    print('##############################################')
     config = configparser.ConfigParser()
     config.read('poker.ini')
     global fold_threshold 
@@ -280,7 +283,7 @@ class RL1(BasePokerPlayer):
     global opp_fold_threshold
     game_count = game_count +1
     config = configparser.ConfigParser()
-    if game_count ==300:
+    if game_count ==200:
         if(round_state['seats'][0]['uuid'] == self.uuid):
             stack1 =  round_state['seats'][0]['stack']
             stack2 =  round_state['seats'][1]['stack']
@@ -289,12 +292,20 @@ class RL1(BasePokerPlayer):
             stack2 =  round_state['seats'][0]['stack']
 
         if stack1 > stack2:
-            opp_fold_threshold = opp_fold_threshold-0.005
+            opp_fold_threshold = opp_fold_threshold-0.001
+            if opp_fold_threshold < fold_threshold:
+                temp = opp_flop_threshold
+                opp_flop_threshold = fold_threshold
+                fold_threshold = temp
             config['DEFAULT'] = {'foldLowerBound': str(fold_threshold), 'foldUpperBound': str(opp_fold_threshold)}
             with open('poker.ini', 'w') as configfile:
                 config.write(configfile)
         else:
-            fold_threshold = fold_threshold+0.005
+            fold_threshold = fold_threshold+0.001
+            if opp_fold_threshold < fold_threshold:
+                temp = opp_flop_threshold
+                opp_flop_threshold = fold_threshold
+                fold_threshold = temp
             config['DEFAULT'] = {'foldLowerBound': str(fold_threshold), 'foldUpperBound': str(opp_fold_threshold)}
             with open('poker.ini', 'w') as configfile:
                 config.write(configfile)

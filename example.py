@@ -8,7 +8,7 @@ from RL1 import RL1
 from RL2 import RL2
 #TODO:config the config as our wish
 for i in range(1000):
-    config = setup_config(max_round=300, initial_stack=10000, small_blind_amount=10)
+    config = setup_config(max_round=200, initial_stack=10000, small_blind_amount=10)
     
     
     
