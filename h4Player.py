@@ -102,15 +102,16 @@ class h4Player(BasePokerPlayer):
     turn_corr = 0.79630204
     river_corr = 1.0
     
+    global ob_fn
     # how much you multiply to your current OHS when your opponent raises
     # should change according to opponent behaviour
-    river_multiplier = 1.6
+    river_multiplier = 1.05 + 0.55 * ob_fn
     preflop_multiplier = 1.0 + (river_multiplier - 1.0)*preflop_corr
     turn_multiplier = 1.0 + (river_multiplier - 1.0)*turn_corr
     flop_multiplier = 1.0 + (river_multiplier - 1.0)*flop_corr
     # how much you multiply to your current OHS when your opponent calls 
     # should change according to opponent behaviour
-    river_call_multiplier = 1.05
+    river_call_multiplier = 0.8+0.2*ob_fn
     preflop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*preflop_corr
     turn_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*turn_corr
     flop_call_multiplier = 1.0 + (river_call_multiplier - 1.0)*flop_corr
@@ -142,9 +143,11 @@ class h4Player(BasePokerPlayer):
     if len(opp_actions)>0:
         last_opp_action = opp_actions[-1]
         if last_opp_action['action'] == 'CALL':
-            opp_hand_win_rate = opp_hand_win_rate / locals()[street+'_call_multiplier']
+            opp_hand_win_rate = opp_hand_win_rate * locals()[street+'_call_multiplier']
+            if opp_hand_win_rate < 0.40:
+                opp_hand_win_rate = 0.40
         if last_opp_action['action'] == 'RAISE':
-            opp_hand_win_rate = opp_hand_win_rate * locals()[street+'_multiplier']
+            opp_hand_win_rate = opp_hand_win_rate / locals()[street+'_multiplier']
             if opp_hand_win_rate > 0.80:
                 opp_hand_win_rate = 0.80
 
@@ -164,10 +167,10 @@ class h4Player(BasePokerPlayer):
     # prob_agg = float(opp_behaviour['aggressive'])/sum(opp_behaviour.values())
     # ob_fn = (prob_passive - prob_agg + 1)/2
     # print 'ob fn:' + str(ob_fn)
-    global ob_fn
+    
     prob_passive = float(opp_behaviour['passive'])/sum(opp_behaviour.values())
     prob_agg = float(opp_behaviour['aggressive'])/sum(opp_behaviour.values())
-    ob_fn = 50 + (prob_passive*50) + (-prob_agg*50)
+    ob_fn = (50 + (prob_passive*50) + (-prob_agg*50))/100
     print 'ob fn:' + str(ob_fn)
 
     #calculate overall win rate based on self and opponent hand strength
@@ -191,6 +194,9 @@ class h4Player(BasePokerPlayer):
         fold_breakeven_point = (1.0 - float(pot)/float(expected_pot))/2.0
         fold_breakeven_point = 0
         # print('fpoint',fold_breakeven_point)
+        
+        if(overall_win_prob< fold_threshold):
+            return 'fold'
 
         if(overall_win_prob < fold_breakeven_point):
             global fold_threshold
@@ -273,7 +279,9 @@ class h4Player(BasePokerPlayer):
 
   def receive_round_start_message(self, round_count, hole_card, seats):
     global opp_hand_win_rate
+    global ob_fn
     opp_hand_win_rate = 0.5
+    ob_fn = 0.5
 
   def receive_street_start_message(self, street, round_state):
     pass
@@ -290,14 +298,14 @@ class h4Player(BasePokerPlayer):
 #          opp_hand_strength_river = HandEvaluator.eval_hand(gen_cards(opp_hand), gen_cards(round_state['community_card']))
 #          print 'End opp hand win rate' + str(opp_hand_win_rate)
 #          print 'End actual opp hand win rate' + str(opp_hand_strength_river)
-    pass
+    
 
     # obtain opponent uuid
     for player in round_state['seats']:
       if player['uuid'] != self.uuid:
         opp_uuid = player['uuid']
         break
-
+    print(hand_info)
     # can see opponent's hand
     if len(hand_info) == 2:
       for user in hand_info:
@@ -372,14 +380,14 @@ class h4Player(BasePokerPlayer):
     # draw or opponent won, check if he is passive
     # if our win probability is high and he doesn't raise, likely passive
     if len(winners) == 2 or winners[0]['uuid'] == opp_uuid:
-        if win_prob > 0.4 and percentage_raise < 0.3:
+        if win_prob > 0.5 and percentage_raise < 0.3:
             opp_behaviour['passive'] += (2*win_prob)
             print 'opp is passive ' + str(opp_behaviour['passive'])
 
     # draw or we won, check if he is aggressive
     # if our win probability is low and he keeps raising, likely aggressive
     if len(winners) == 2 or winners[0]['uuid'] == self.uuid:
-        if win_prob < 0.6 and percentage_raise > 0.4:
+        if win_prob < 0.5 and percentage_raise > 0.4:
             opp_behaviour['aggressive'] += (2*(1-win_prob))
             print 'opp is aggressive' + str(opp_behaviour['aggressive'])
 
