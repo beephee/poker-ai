@@ -1,0 +1,6 @@
+
+ FOR 5 CARDS
+Best total number is 0.832745
+Max is 3.575
+Min is 0.0
+Range is 3.575
