@@ -11,7 +11,7 @@ The "example.py" file can be used to run a simulation of the two-player game.
 
 Our poker agent can be found in the Group26Player.py file. The agent can be called using "from Group26Player import Group26Player".
 
-#### Detailed Report
+### Detailed Report
 
 Please do take a look at "Poker Project - Team 26.pdf" for our full technical report!
 
