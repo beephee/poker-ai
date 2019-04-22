@@ -1,75 +1,21 @@
-## Term Project
+## Poker Project - Group 26
 
 ### Set up environment
-using the conda or pyenv
+In this project, we design an intelligent agent to play Limit Texas Hold’Em Poker. We propose a novel adaptive agent designed to predict an accurate representation of its hand strength, through Monte Carlo simulations, and to extract information about the opponent’s behaviour and hand strength through opponent mapping. The agent utilises a nested evaluation function to determine its actions through Bayesian Inference, adapting its strategy based on the opponent.
 
-- conda create -n cs3243 python=2.7
-- source activate cs3243
+### Running the Game Simulation
 
-replace the cs3243 with whatever name you want
-https://conda.io/docs/index.html
+The "example.py" file can be used to run a simulation of the two-player game.
 
-pip install PyPokerEngine  
-https://ishikota.github.io/PyPokerEngine/
+### Poker Agent
 
+Our poker agent can be found in the Group26Player.py file. The agent can be called using "from Group26Player import Group26Player".
 
+#### Detailed Report
 
-testing installmement:
+Please do take a look at "Poker Project - Team 26.pdf" for our full technical report!
 
-```
-import pypokerengine   
-print("hello world")
-```
-
-
-
-### Create your own player
-#### Example player
-
-```
-
-class RaisedPlayer(BasePokerPlayer):
-
-  def declare_action(self, valid_actions, hole_card, round_state):
-    #Implement your code
-    return action
-
-  def receive_game_start_message(self, game_info):
-    pass
-
-  def receive_round_start_message(self, round_count, hole_card, seats):
-    pass
-
-  def receive_street_start_message(self, street, round_state):
-    pass
-
-  def receive_game_update_message(self, action, round_state):
-    pass
-
-  def receive_round_result_message(self, winners, hand_info, round_state):
-    pass
-```
-#### Example Game
-The example game is in the example.py
-
-#### Information for the game
-```valid_actions```: vaild action list
-
-
-```
-[
-    { "action" : "fold"  },
-    { "action" : "call" },
-    { "action" : "raise" }
-]
-OR 
-[
-    {"action": "fold"},
-    {"action": "call"}
-]
-```
-
-In the limited version, user only allowed to raise for four time in one round game.    
-In addition, in each street (preflop,flop,turn,river),each player only allowed to raise for four times.
+In this limited version, user only allowed to raise for four time in one round game.    
+In addition, in each street (preflop,flop,turn,river), each player is only allowed to raise for four times.
 
 Other information is similar to the PyPokerEngine,please check the detail about the parameter [link](https://github.com/ishikota/PyPokerEngine/blob/master/AI_CALLBACK_FORMAT.md)
