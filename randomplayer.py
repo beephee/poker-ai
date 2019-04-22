@@ -14,6 +14,7 @@ class RandomPlayer(BasePokerPlayer):
     #print("------------VALID_ACTIONS----------")
     #pp.pprint(valid_actions)
     #print("-------------------------------")
+    
     r = rand.random()
     if r <= 0.5:
       call_action_info = valid_actions[1]
@@ -37,7 +38,7 @@ class RandomPlayer(BasePokerPlayer):
     pass
 
   def receive_round_result_message(self, winners, hand_info, round_state):
-    pass
+    print(round_state)
 
 def setup_ai():
   return RandomPlayer()
